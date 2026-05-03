@@ -20,6 +20,10 @@ python v2.py              # trains and generates sample text
 | `master` | TinyShakespeare | Karpathy's original (n_embd=384, 6 heads, 6 layers) |
 | `truyen-kieu` | Truyện Kiều | Tuned for smaller dataset (n_embd=128, 4 heads, 4 layers) |
 
+## Training run
+
+![Training output](assets/training-run.png)
+
 ## Hyperparameter notes
 
 Truyện Kiều (~104K chars) is ~10x smaller than TinyShakespeare (~1.1M chars). The original config overfits badly (train loss 0.07, val loss 3.4 by step 3000). Reducing model capacity keeps train/val loss aligned.
