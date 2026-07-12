@@ -13,12 +13,15 @@ python v2.py              # trains and generates sample text
 
 `input.txt` must be present in the working directory (included in this repo).
 
-## Branches
+## Files
 
-| Branch | Data | Config |
-|--------|------|--------|
-| `master` | TinyShakespeare | Karpathy's original (n_embd=384, 6 heads, 6 layers) |
-| `truyen-kieu` | Truyện Kiều | Tuned for smaller dataset (n_embd=128, 4 heads, 4 layers) |
+| File | Purpose |
+|------|---------|
+| `bigram.py` | Bigram baseline (first step of the lecture series) |
+| `v2.py` | Full GPT: multi-head self-attention, residual blocks, layernorm — tuned for Truyện Kiều (n_embd=128, 4 heads, 4 layers) |
+| `input.txt` | Training corpus (Truyện Kiều, ~104K characters) |
+
+Karpathy's original TinyShakespeare config (n_embd=384, 6 heads, 6 layers) is kept in the hyperparameter table below for comparison.
 
 ## Training run
 
